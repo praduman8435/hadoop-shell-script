@@ -22,12 +22,14 @@ docker exec -it namenode /bin/bash
 
 hdfs dfs -mkdir -p /user/root/
 
-hdfs dfs -ls /user/root
+hdfs dfs -ls /user
 
-exit 0
+exit || { echo "Failed to exit container"; exit 1; }
 
 ls
 
 wget https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-mapreduce-examples/2.7.1/hadoop-mapreduce-examples-2.7.1-sources.jar
+
+ls
 
 
