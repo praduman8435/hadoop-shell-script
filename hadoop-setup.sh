@@ -24,7 +24,7 @@ hdfs dfs -mkdir -p /user/root/
 
 hdfs dfs -ls /user/root
 
-exit
+exit 0
 
 ls
 
