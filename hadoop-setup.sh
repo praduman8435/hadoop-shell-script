@@ -24,7 +24,7 @@ hdfs dfs -mkdir -p /user/root/
 
 hdfs dfs -ls /user
 
-exit || { echo "Failed to exit container"; exit 1; }
+docker container stop namenode
 
 ls
 
